@@ -1,6 +1,6 @@
 {% extends "base_with_margins.html" %}
 {% load adv_cache %}
-{% block title %}About{% endblock %}
+{% block title %}ABOUT{% endblock %}
 {% block content %}
 
 {% cache 86400 about_wrapper 'about' %}
@@ -8,9 +8,9 @@
 <div class="row-fluid clearfix">
     <div class="col-sm-8 no-pad-mobile">
         <br class="non-mobile-only"/>
-        <h1 id='about'>About</h1>
+        <h1 id='about'>ABOUT</h1>
 
-        <p><strong>Chicago Councilmatic</strong> tracks all things related to Chicago City Council: the <a href='/search/' target='_blank'>legislation</a> introduced and passed, its various <a href='/committees/' target='_blank'>committees</a> and the <a href='/events/' target='_blank'>meetings</a> they hold, and the <a href='/council-members/' target='_blank'>aldermen</a> themselves.</p>
+        <p><strong>Boston Councilmatic</strong> tracks all things related to Boston City Council: the <a href='/search/' target='_blank'>legislation</a> introduced and passed, its various <a href='/committees/' target='_blank'>committees</a> and the <a href='/events/' target='_blank'>meetings</a> they hold, and the <a href='/council-members/' target='_blank'>councilors</a> themselves.</p>
 
         <p>You can search and browse legislation from 2011 onwards. Some interesting searches include:</p>
 
@@ -21,7 +21,7 @@
             <li><a href="/search/?q=birthday" target="_blank">celebrating birthdays?!</a></li>
         </ul>
 
-        <p>Chicago Councilmatic is a free and easy way to access official Chicago City Council information.</p>
+        <p>Boston Councilmatic is a free and easy way to access official Boston City Council information.</p>
 
     </div>
     <div class="col-sm-4 desktop-only">
@@ -34,7 +34,7 @@
                     <a href="/about">About</a>
                 </li>
                 <li>
-                    <a href="#about-city-council">What is Chicago City Council,<br />and how does it work?</a>
+                    <a href="#about-city-council">What is Boston City Council,<br />and how does it work?</a>
                 </li>
                 <li>
                     <a href="#tags">Legislation tags</a>
@@ -64,23 +64,23 @@
 <div class="row-fluid">
     <div class="col-sm-8 no-pad-mobile" id="about-city-council">
         <br/><br/>
-        <h3>What is Chicago City Council, and how does it work?</h3>
+        <h3>What is Boston City Council, and how does it work?</h3>
 
-        <p>Chicago City Council is the legislative body of the City of Chicago. It consists of <a href='/council-members' target="_blank">50 elected aldermen</a>, each representing one of Chicago's wards. City Council meets monthly and is presided over by <a href='/person/emanuel-rahm-3af71de0e6ca/' target="_blank">Rahm Emanuel</a>, the Mayor of Chicago. The secretary is <a href='/person/valencia-anna-m-ae119fe8c2e3/' target="_blank">Anna Valencia</a>, City Clerk of Chicago</a>.</p>
+        <p>Boston City Council is the legislative body of the City of Boston. It consists of <a href='/council-members' target="_blank">13 elected councilors</a>, nine representing each Boston district, and four 'At-Large' that are elected by the whole city. City Council meets monthly and is presided over by <a href='/person/martin-walsh-3af71de0e6ca/' target="_blank">Martin Walsh</a>, the Mayor of Boston. The secretary is <a href='/person/valencia-anna-m-ae119fe8c2e3/' target="_blank">Maureen Feeney</a>, City Clerk of Boston</a>.</p>
 
-        <p>Generally, Chicago City Council deals with the following topics:</p>
+        <p>Generally, Boston City Council deals with the following topics:</p>
 
         <ul>
             <li><a href='/search/?&selected_facets=topics_exact:City%20Matters' target="_blank">city-wide policies</a> - usually proposed by the mayor</li>
-            <li><a href='/search/?&selected_facets=topics_exact:Ward%20Matters' target="_blank">local ward matters</a> - spearheaded by Aldermen</li>
+            <li><a href='/search/?&selected_facets=topics_exact:Ward%20Matters' target="_blank">local neighborhood matters</a> - spearheaded by Councilors</li>
             <li><a href='/search/?&selected_facets=topics_exact:Residents' target="_blank">matters involving individuals</a> - miscellaneous claims & honorifics</li>
         </ul>
 
-        <p>For the nitty-gritty on how Chicago City Council works, read about its <a href='http://chicityclerk.com/city-council-news-central/council-agenda' target="_blank">structure</a> and <a href='http://www.chicityclerk.com/city-council-news-central/rules-order' target="_blank">rules</a> from the City Clerk.</p>
+        <p>For the nitty-gritty on how Boston City Council works, read about its <a href='http://chicityclerk.com/city-council-news-central/council-agenda' target="_blank">structure</a> and <a href='http://www.chicityclerk.com/city-council-news-central/rules-order' target="_blank">rules</a> from the City Clerk.</p>
 
         <br/>
         <h4>Types of legislation</h4>
-        <p>Below are the categories of legislation in Chicago:</p>
+        <p>Below are the categories of legislation in Boston:</p>
 
         {% include 'partials/component_bill_type_table.html' %}
 
@@ -92,7 +92,7 @@
     <div class="col-sm-8 no-pad-mobile" id="tags">
         <br /><br>
         <h3 id='tags'>Legislation tags</h3>
-        <p>One of the more unusual aspects of Chicago City Council is the volume of ordinances that are introduced and passed every month. Most of these are routine items like <a href='/search/?q=&selected_facets=topics_exact:Sign%20permits' target="_blank">sign permits</a>, <a href='/search/?q=&selected_facets=topics_exact:Damage to vehicle claim' target="_blank">damaged vehicle claims</a>, <a href='/search/?q=&selected_facets=topics_exact:Sidewalk cafe' target="_blank">sidewalk cafe approvals</a> and <a href='/search/?q=&selected_facets=topics_exact:Honorifics' target="_blank">honorifics</a>. </p>
+        <p>One of the more unusual aspects of Boston City Council is the volume of ordinances that are introduced and passed every month. Most of these are routine items like <a href='/search/?q=&selected_facets=topics_exact:Sign%20permits' target="_blank">sign permits</a>, <a href='/search/?q=&selected_facets=topics_exact:Damage to vehicle claim' target="_blank">damaged vehicle claims</a>, <a href='/search/?q=&selected_facets=topics_exact:Sidewalk cafe' target="_blank">sidewalk cafe approvals</a> and <a href='/search/?q=&selected_facets=topics_exact:Honorifics' target="_blank">honorifics</a>. </p>
 
     </div>
 </div>
@@ -115,7 +115,7 @@
 
         <h3>Data</h3>
 
-        <p>The data from this website comes from the <a href="http://chicago.legistar.com/" target="_blank">Chicago City Council legislation site</a>, a system built by <a href='http://www.granicus.com/' target="_blank">Granicus</a> using their <a href='https://www.granicus.com/solutions/meeting-agenda-suite/' target="_blank">Legistar Legislative Management Suite</a>. The data is managed by the <a href='http://chicityclerk.com/' target="_blank">Office of the City Clerk</a>. On Councilmatic, each piece of legislation provides a link to its source for reference.</p>
+        <p>The data from this website comes from the <a href="http://chicago.legistar.com/" target="_blank">Boston City Council legislation site</a>, a system built by <a href='http://www.granicus.com/' target="_blank">Granicus</a> using their <a href='https://www.granicus.com/solutions/meeting-agenda-suite/' target="_blank">Legistar Legislative Management Suite</a>. The data is managed by the <a href='http://chicityclerk.com/' target="_blank">Office of the City Clerk</a>. On Councilmatic, each piece of legislation provides a link to its source for reference.</p>
 
         <p>This data is then collected daily with the help of the <a href='http://webapi.legistar.com/' target="_blank">Legistar Web API</a> and stored using the <a href="http://opencivicdata.org/about/" target="_blank">Open Civic Data</a> standard and platform. Open Civic Data standardizes information about people, organizations, events and bills at any level of government and was built in collaboration with <a href="http://sunlightfoundation.com/" target="_blank">The Sunlight Foundation</a>, <a href="https://developers.google.com/civic-information/?hl=en" target="_blank">Google</a>, <a href="http://www.granicus.com/" target="_blank">Granicus</a> and <a href="http://www.opennorth.ca/" target="_blank">Open North</a>.
         </p>
@@ -138,7 +138,7 @@
 
         <p><a href='https://sunlightfoundation.com/' target="_blank"><img style='height:70px;' src='/static/images/sunlight-logo.png' /></a></p>
 
-        <p>Chicago Councilmatic has been built with support from <a href="http://sunlightfoundation.com/" target="_blank">The Sunlight Foundation</a>, a national, nonpartisan, nonprofit organization committed to making government more accountable & transparent.</p>
+        <p>Boston Councilmatic has been built with support from <a href="http://sunlightfoundation.com/" target="_blank">The Sunlight Foundation</a>, a national, nonpartisan, nonprofit organization committed to making government more accountable & transparent.</p>
     </div>
 </div>
 
@@ -148,7 +148,7 @@
 
         <h3>Contact us</h3>
 
-        <p>Have a question about information you were seeking to find, or explanations of how Chicago City Council works? Send us an email <a href='mailto:info@datamade.us'>info@datamade.us</a>.</p>
+        <p>Have a question about information you were seeking to find, or explanations of how Boston City Council works? Send us an email <a href='mailto:info@datamade.us'>info@datamade.us</a>.</p>
 
         <p>Developers: if you notice a bug, file an issue on our <a href='https://github.com/datamade/chi-councilmatic/' target="_blank">issue tracker</a>!</p>
 
@@ -183,8 +183,8 @@
         <h4>Photo credits</h4>
 
         <ul class="small plain-list text-muted">
-            <li>Chicago City Hall: Chicago Ideas</li>
-            <li>Chicago City Council Chambers: Daniel X. O'Neil</li>
+            <li>Boston City Hall: Boston Ideas</li>
+            <li>Boston City Council Chambers: Daniel X. O'Neil</li>
             <li>User Icon: Richard Schumann<li>
         </ul>
 

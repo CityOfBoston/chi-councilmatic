@@ -26,7 +26,6 @@ class ChicagoBillIndex(BillIndex, indexes.Indexable):
             boost = 1 + 1.0 / max(weeks_passed, 1)
 
         data['boost'] = boost
-
         return data
 
     def prepare_topics(self, obj):

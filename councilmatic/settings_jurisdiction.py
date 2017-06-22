@@ -5,18 +5,18 @@
 ###############################
 
 OCD_CITY_COUNCIL_ID = 'ocd-organization/ef168607-9135-4177-ad8e-c1f7a4806c3a'
-CITY_COUNCIL_NAME = 'Chicago City Council'
+CITY_COUNCIL_NAME = 'Boston City Council'
 OCD_JURISDICTION_ID = 'ocd-jurisdiction/country:us/state:il/place:chicago/government'
 LEGISLATIVE_SESSIONS = ['2007', '2011', '2015'] # the last one in this list should be the current legislative session
-CITY_NAME = 'Chicago'
-CITY_NAME_SHORT = 'Chicago'
+CITY_NAME = 'Boston'
+CITY_NAME_SHORT = 'Boston'
 
 # VOCAB SETTINGS FOR FRONT-END DISPLAY
 CITY_VOCAB = {
-    'MUNICIPAL_DISTRICT': 'Ward',       # e.g. 'District'
-    'SOURCE': 'Chicago City Clerk',
-    'COUNCIL_MEMBER': 'Alderman',       # e.g. 'Council Member'
-    'COUNCIL_MEMBERS': 'Aldermen',      # e.g. 'Council Members'
+    'MUNICIPAL_DISTRICT': 'District',       # e.g. 'District'
+    'SOURCE': 'Boston City Clerk',
+    'COUNCIL_MEMBER': 'Councilor',       # e.g. 'Council Member'
+    'COUNCIL_MEMBERS': 'Councilors',      # e.g. 'Council Members'
     'EVENTS': 'Meetings',               # label for the events listing, e.g. 'Events'
 }
 
@@ -29,10 +29,10 @@ APP_NAME = 'chicago'
 
 # this is for populating meta tags
 SITE_META = {
-    'site_name' : 'Chicago Councilmatic',
-    'site_desc' : 'City Council, demystified. Keep tabs on Chicago legislation, aldermen, & meetings.',
+    'site_name' : 'Boston Councilmatic',
+    'site_desc' : 'City Council, demystified. Keep tabs on Boston legislation, councilors, & meetings.',
     'site_author' : 'DataMade',
-    'site_url' : 'https://chicago.councilmatic.org',
+    'site_url' : 'https://boston.councilmatic.org',
     'twitter_site': '@DataMadeCo',
     'twitter_creator': '@DataMadeCo',
 }
@@ -95,14 +95,14 @@ CITY_COUNCIL_MEETING_NAME = 'City Council'
 # this is the name of the role of committee chairs, e.g. 'CHAIRPERSON' or 'Chair'
 # as stored in legistar
 # if this is set, committees will display chairs
-COMMITTEE_CHAIR_TITLE = 'Chairman'
+COMMITTEE_CHAIR_TITLE = 'President'
 
 # this is the anme of the role of committee members,
 # as stored in legistar
 COMMITTEE_MEMBER_TITLE = 'Member'
 
 
-COMMITTEE_VICE_CHAIR_TITLE = 'Vice Chair'
+COMMITTEE_VICE_CHAIR_TITLE = 'At-Large'
 
 
 
@@ -115,7 +115,7 @@ LEGISLATION_TYPE_DESCRIPTIONS = [
         'search_term': 'ordinance',
         'fa_icon': 'file-text-o',
         'html_desc': True,
-        'desc': 'Ordinances are proposed changes to Chicago’s local laws. Some of these are changes to Chicago’s Municipal Code and others, called uncompiled statutes, are recorded in the Council’s Journal of Proceedings.',
+        'desc': 'Ordinances are proposed changes to Boston’s local laws. Some of these are changes to Boston’s Municipal Code and others, called uncompiled statutes, are recorded in the Council’s Journal of Proceedings.',
 
     },
     {
@@ -123,7 +123,7 @@ LEGISLATION_TYPE_DESCRIPTIONS = [
         'search_term': 'claim',
         'fa_icon': 'dollar',
         'html_desc': True,
-        'desc': "If you are harmed by the City of Chicago, you can make a claim against the City for your costs. Minor harms, like personal injury or automotive damage, are settled through City Council as Claims. If you sue the City for harm and come to a settlement, the settlement must also be approved by the Council.",
+        'desc': "If you are harmed by the City of Boston, you can make a claim against the City for your costs. Minor harms, like personal injury or automotive damage, are settled through City Council as Claims. If you sue the City for harm and come to a settlement, the settlement must also be approved by the Council.",
 
     },
     {
@@ -147,7 +147,7 @@ LEGISLATION_TYPE_DESCRIPTIONS = [
         'search_term': 'appointment',
         'fa_icon': 'user',
         'html_desc': True,
-        'desc': "Used for appointing individuals to positions within various official City of Chicago and intergovernmental boards.",
+        'desc': "Used for appointing individuals to positions within various official City of Boston and intergovernmental boards.",
 
     },
     {
@@ -171,8 +171,15 @@ LEGISLATION_TYPE_DESCRIPTIONS = [
         'search_term': 'oath of office',
         'fa_icon': 'user',
         'html_desc': True,
-        'desc': "Official swearing in of individuals to leadership positions at the City of Chicago, including Aldermen and board members.",
+        'desc': "Official swearing in of individuals to leadership positions at the City of Boston, including Councilors and board members.",
 
+    },
+    {
+        'name': 'Home Rule Petition',
+        'search_term': 'home rule petition',
+        'fa_icon': 'user',
+        'html_desc': True,
+        'desc': "Official petition of municipalities to make local laws, limited by the State of Massachusetts. "
     },
 ]
 
@@ -209,47 +216,27 @@ ABOUT_BLURBS = {
 
 }
 
-MANUAL_HEADSHOTS = {
-    'arena-john-d9a11334830d':           {'source': '45th Ward Office', 'image': 'manual-headshots/arena-john.jpg' },
-    'beale-anthony-d125d27369f3':        {'source': '@Alderman_Beale, Twitter', 'image': 'manual-headshots/beale-anthony.jpg' },
-    'burns-william-d-74409520db8c':      {'source': 'Masp360', 'image': 'manual-headshots/burns-william-d.jpg' },
-    'cappleman-james-7b6638b78d83':      {'source': 'james46.org', 'image': 'manual-headshots/cappleman-james.jpg' },
-    'cochran-willie-b6cc52d2933a':       {'source': 'williebcochran.com', 'image': 'manual-headshots/cochran-willie.jpg' },
-    'harris-michelle-a-c9d7f4375894':    {'source': 'www.aldermanmichelleharris.net', 'image': 'manual-headshots/harris-michelle-a.jpg' },
-    'mell-deborah-5fa778d13b51':         {'source': 'www.33rdward.org', 'image': 'manual-headshots/mell-deborah.jpg' },
-    'mitchell-gregory-i-1d481a8e2acd':   {'source': 'mitchellforalderman.com', 'image': 'manual-headshots/mitchell-gregory-i.jpg' },
-    'moore-joseph-3c9ae7316619':         {'source': 'participatorybudgeting49.wordpress.com', 'image': 'manual-headshots/moore-joseph.jpg' },
-    'munoz-ricardo-79203ae83471':        {'source': 'www.munoz22.com', 'image': 'manual-headshots/munoz-ricardo.jpg' },
-    'napolitano-anthony-v-7ab5df04527e': {'source': 'www.norwoodpark.org', 'image': 'manual-headshots/napolitano-anthony-v.jpg' },
-    'oshea-matthew-j-5071e1c58184':      {'source': 'takebackchicago.org', 'image': 'manual-headshots/oshea-matthew-j.jpg' },
-    'osterman-harry-550e6f30c87c':       {'source': '48thward.org', 'image': 'manual-headshots/osterman-harry.jpg' },
-    'ramirez-rosa-carlos-b67e026bf1e5':  {'source': 'www.aldermancarlosrosa.org', 'image': 'manual-headshots/ramirez-rosa-carlos.jpg' },
-    'reboyras-ariel-0ebeb178852e':       {'source': 'www.reboyras.com', 'image': 'manual-headshots/reboyras-ariel.jpg' },
-    'sadlowski-garza-susan-ef8b7a07f272':{'source': 'calumetareaindustrial.com', 'image': 'manual-headshots/sadlowski-garza-susan.jpg' },
-    'sawyer-roderick-t-a6e5d5f2bba5':    {'source': '@rodericktsawyer, Twitter', 'image': 'manual-headshots/sawyer-roderick-t.jpg' },
-    'silverstein-debra-l-173bbaa057f6':  {'source': 'ppiachicago.org', 'image': 'manual-headshots/silverstein-debra-l.jpg' },
-    'solis-daniel-b0bd981415f9':         {'source': 'ward25.com', 'image': 'manual-headshots/solis-daniel.jpg' },
-    'taliaferro-chris-7646256e8079':     {'source': 'Facebook', 'image': 'manual-headshots/taliaferro-chris.jpg' },
-    'villegas-gilbert-8c9f813ce0a9':     {'source': '@gilbert36ward, Twitter', 'image': 'manual-headshots/villegas-gilbert.jpg' },
-    'thompson-patrick-d-aabd3b898af9':   {'source': 'www.ward11.org', 'image': 'manual-headshots/thompson-patrick-d.jpg' },
-    'curtis-derrick-g-dc2702c16bce':     {'source': 'Chicago City Clerk', 'image': 'manual-headshots/curtis-derrick-g.jpg' },
-    'ervin-jason-c-a6bd57bb3afe':        {'source': '@aldermanervin, Twitter', 'image': 'manual-headshots/ervin-jason-c.jpg' },
-    'hopkins-brian-4b6246ecbbbe':        {'source': '@aldermanhopkins, Twitter', 'image': 'manual-headshots/hopkins-brian.jpg' },
-    'lopez-raymond-a-22593624a716':      {'source': '@rlopez15thward, Twitter', 'image': 'manual-headshots/lopez-raymond-a.jpg' },
-    'moore-david-h-788e5a5727aa':        {'source': 'Chicago City Clerk', 'image': 'manual-headshots/moore-david-h.jpg' },
-    'pawar-ameya-9488bd421a51':          {'source': 'chicago47.org', 'image': 'manual-headshots/pawar-ameya.jpg' },
-    'quinn-marty-c8eb35e12e92':          {'source': 'Chicago City Clerk', 'image': 'manual-headshots/quinn-marty.jpg' },
-    'santiago-milagros-s-f4b095aa4479':  {'source': 'Chicago City Clerk', 'image': 'manual-headshots/santiago-milagros-s.jpg' },
-    'scott-jr-michael-7f664e1708fe':     {'source': 'citizensformichaelscottjr.com/', 'image': 'manual-headshots/scott-jr-michael.jpg' },
-    'smith-michele-1994841ecda3':        {'source': '@aldermansmith43, Twitter', 'image': 'manual-headshots/smith-michele.jpg' },
-    'sposato-nicholas-7ac2aa1b1965':     {'source': 'aldermansposato.com', 'image': 'manual-headshots/sposato-nicholas.png' },
-    'emanuel-rahm-3af71de0e6ca':         {'source': 'cityofchicago.org', 'image': 'manual-headshots/emanuel-rahm.jpg' },
+MANUAL_HEADSHOTS = { #use last section of ocd-person code found in person dump files from api
+    'mark-ciommo-c8eb35e12e92':           {'source': 'www.boston.gov', 'image': 'manual-headshots/mark-ciommo.jpg'},
+    'josh-zakim-e7f3145cb0bf':            {'source': 'www.boston.gov', 'image': 'manual-headshots/josh-zakim.jpg'},
+    'tito-jackson-aabd3b898af9':          {'source': 'www.boston.gov', 'image': 'manual-headshots/tito-jackson.jpg'},
+    'matt-omalley-ef8b7a07f272':          {'source': 'www.boston.gov', 'image': 'manual-headshots/matt-omalley.jpg'},
+    'timothy-mccarthy-d125d27369f3':      {'source': 'www.boston.gov', 'image': 'manual-headshots/timothy-mccarthy.jpg'},
+    'andrea-campbell-c9d7f4375894':       {'source': 'www.boston.gov', 'image': 'manual-headshots/andrea-campbell.jpg'},
+    'frank-baker-1d481a8e2acd':           {'source': 'www.boston.gov', 'image': 'manual-headshots/frank-baker.jpg'},
+    'bill-linehan-a6e5d5f2bba5':          {'source': 'www.boston.gov', 'image': 'manual-headshots/bill-linehan.jpg'},
+    'salvatore-lamattina-fc1eb983a334':   {'source': 'www.boston.gov', 'image': 'manual-headshots/salvatore-lamattina.jpg'},
+    'ayanna-pressley-f7bbd9c416e4':       {'source': 'www.boston.gov', 'image': 'manual-headshots/ayanna-pressley.jpg'},
+    'annissa-essaibi-george-4b6246ecbbbe':{'source': 'www.boston.gov', 'image': 'manual-headshots/annissa-essaibi-george.jpg'},
+    'michael-flaherty-b1e0d8e0205d':      {'source': 'www.boston.gov', 'image': 'manual-headshots/michael-flaherty.jpg'},
+    'michelle-wu-77f09c5b056c':           {'source': 'www.boston.gov', 'image': 'manual-headshots/michelle-wu.jpg'},
+    'martin-walsh-3af71de0e6ca':          {'source': 'www.boston.gov', 'image': 'manual-headshots/martin-walsh.jpg' },
     'mendoza-susana-a-a465109bd96a':     {'source': 'chicityclerk.com', 'image': 'manual-headshots/mendoza-susana-a.jpg' },
     'valencia-anna-m-ae119fe8c2e3':      {'source': 'chicityclerk.com', 'image': 'manual-headshots/valencia-anna.jpg'},
 }
 
 CONTACT_INFO = {
-    'arena-john-d9a11334830d':              {'twitter': { 'handle': '@45thWardChicago', 'url': 'https://twitter.com/45thWardChicago?lang=en' }, 'phone': '(773) 286-4545', 'address': '4754 North Milwaukee Avenue', },
+    'michelle-wu-77f09c5b056c':             {'twitter': { 'handle': '@wutrain', 'url': 'https://twitter.com/wutrain?lang=en' }, 'phone': '617-635-3115', 'address': '1 City Hall Square, Suite 550', },
 
     'beale-anthony-d125d27369f3':           {'twitter': { 'handle': '@Alderman_Beale', 'url': 'https://twitter.com/alderman_beale?lang=en' }, 'phone': '(773) 785-1100', 'address': '34 East 112th Place', },
 

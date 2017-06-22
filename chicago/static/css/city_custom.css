@@ -1,29 +1,35 @@
 /* Chicago specific CSS */
+h1, h2, h3, h4 {
+    font-family: Montserrat,sans-serif;
+}
+body{
+    font-family: Lora,serif;
+}
 
 a {
-	color: #C00000;
+	color: #288BE4;
 }
 
 .btn-primary {
-	background-color: #C00000;
-	border-color: #C00000;
+	background-color: #288BE4;
+	border-color: #288BE4;
 }
 .btn-info {
-	background-color: #DBEEFA;
-	border-color: #DBEEFA;
+	background-color: #D2D2D2;
+	border-color: #D2D2D2;
 	color: #333;
 }
 .btn-info:hover, .btn-info:active {
-    background-color: #DBEEFA;
-    border-color: #DBEEFA;
-	color: #1c87ca;
+    background-color: #D2D2D2;
+    border-color: #D2D2D2;
+	color: #288BE4;
 }
 .btn-bill-detail{
     padding: 16px 0px;
     top: 12px;
 }
 .btn-bill-detail:hover, .btn-bill-detail:active{
-	background-color: #54afe8; /* medium blue */
+	background-color: #288BE4; /* medium blue */
 	color: #fff;
 }
 
@@ -31,28 +37,28 @@ a {
 
 
 .nav-pills > li > a {
-	color: #1c87ca; /* dark blue */
+	color: #288BE4; /* dark blue */
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li > a:hover {
     background: none;
-    color: #1c87ca; /* dark blue */
-    border-bottom: 8px solid #1c87ca; /* dark blue */
+    color: #288BE4; /* dark blue */
+    border-bottom: 8px solid #288BE4; /* dark blue */
 }
 
 
 
 
 .badge-default {
-    background-color: #DBEEFA;
+    background-color: #D2D2D2;
     color: #333;
 }
 .badge-default-light {
-    background-color: #DBEEFA;
+    background-color: #D2D2D2;
     font-weight: normal;
     color: #777;
 }
 .badge-muted {
-	background-color: #DBEEFA;
+	background-color: #D2D2D2;
 	color: #333;
 }
 
@@ -63,7 +69,7 @@ a {
 }
 
 .bg-info{
-	background-color: #DBEEFA;
+	background-color: #D2D2D2;
 }
 .padded-bg{
 	padding-top: 8px;
@@ -118,12 +124,13 @@ a {
 
 /* homepage */
 #section-photo{
-    background-image:
+    /*background-image:
         linear-gradient(
             rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.3)
         ),
-        url('../images/city_hall.jpg');
+        url('../images/city_hall.jpg');*/
+    background-color: #091F2F;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -141,28 +148,22 @@ a {
 }
 
 #section-engage{
-    background-color: #DBEEFA;
+    background-color: #D2D2D2;
 }
 #section-events{
-    background-image:
-        linear-gradient(
-            rgba(80, 0, 0, 0.4),
-            rgba(80, 0, 0, 0.4)
-        ),
-        url('../images/council_meeting.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 
 }
 #section-events h2{
-    color: #fff;
+    color: #000000;
 }
 #section-events h4, #section-events h3, #section-events p{
-    color: #ddd;
+    color: #000000;
 }
 #section-events p>a{
-    color: #DBEEFA;
+    color: #D2D2D2;
 }
 
 #next-council-meeting-well{
@@ -178,7 +179,7 @@ a {
     max-width: 500px;
 }
 #next-council-meeting-well > .h4 {
-	color: #DBEEFA;
+	color: #D2D2D2;
 }
 #next-council-meeting-well > .h3 {
 	color: #fff;
