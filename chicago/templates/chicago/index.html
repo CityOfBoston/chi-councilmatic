@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% load adv_cache %}
-{% block title %}Chicago City Council, demystified{% endblock %}
+{% block title %}Boston City Council, demystified{% endblock %}
 
 {% block full_content %}
 {% cache 86400 index_wrapper 'index' %}
@@ -10,12 +10,12 @@
             <div class='col-sm-10 col-sm-offset-1'>
                 <br/>
                 <h2>
-                    <h1>{{ CITY_COUNCIL_NAME }}, demystified</h1>
+                    <h1>SEARCH BOSTON LEGISLATION</h1>
                 </h2>
                 <br/>
 
                 <p class="h3 no-pad-top">
-                    <span>Search {{CITY_NAME}} legislation</span>
+                    <!--<span>Search Boston legislation</span>-->
                 </p>
 
                 <form class="search form-search=" action="/search/" method="GET">
@@ -37,13 +37,13 @@
         <div class="row-fluid">
             <div class='col-sm-10 col-sm-offset-1'>
                 <div class="divider"></div>
-
+                <!--
                 <div class='row'>
                     <div class='col-sm-8'>
-                        <p>Chicago City Council consists of <a href='/council-members/' target="_blank">50 elected aldermen</a> and meets monthly to shape the city. The council works with <a href='/person/emanuel-rahm-3af71de0e6ca/'  target="_blank">Rahm Emanuel</a>, the Mayor, and <a href='/person/valencia-anna-m-ae119fe8c2e3/' target="_blank">Anna Valencia</a>, the City Clerk.</p>
+                        <p>Boston City Council consists of <a href='/council-members/' target="_blank">13 elected councilors</a> and meets monthly to shape the city. The council works with <a href='/person/emanuel-rahm-3af71de0e6ca/'  target="_blank">Martin J. Walsh</a>, the Mayor, and <a href='/person/valencia-anna-m-ae119fe8c2e3/' target="_blank">Maureen Feeney</a>, the City Clerk.</p>
 
                         <p>
-                            <strong>Chicago Councilmatic</strong> tracks all things related to Chicago City Council:
+                            <strong>Boston Councilmatic</strong> tracks all things related to Boston City Council:
                             <ul>
                                 <li>
                                     the <a href='/search/' target="_blank">legislation</a> introduced and passed
@@ -66,17 +66,17 @@
 
                         </p>
                     </div>
-
+                    
                     <div class= 'col-sm-4 desktop-only'>
                         <p class='text-center'>
-                            <a href='/council-members/' target="_blank"><img id="map-screenshot" src='/static/images/chicago_map.jpg' class='img-responsive img-rounded' title='City of Chicago Wards' alt="Chicago's 50 Wards" /></a>
-                            <em>Chicago's 50 Wards</em>
+                            <a href='/council-members/' target="_blank"><img id="map-screenshot" src='/static/images/city_hall.jpg' class='img-responsive img-rounded' title='Boston City Hall' alt="Boston City Hall" /></a>
+                            <em>Boston City Hall</em>
                         </p>
                     </div>
                 </div>
-
+                
                 <div class="divider"></div>
-
+                -->
             </div>
         </div>
     </div>
@@ -86,7 +86,7 @@
             <div class='col-sm-10 col-sm-offset-1'>
                 <h2>
                     <span class="non-mobile-only">
-                        <i class="fa fa-fw fa-institution"></i>Engage Chicago City Council
+                        <i class="fa fa-fw fa-institution"></i>ENGAGE BOSTON CITY COUNCIL
                     </span>
                     <span class="mobile-only">
                         <i class="fa fa-institution"></i>
@@ -96,7 +96,7 @@
 
                 <div class='row'>
                     <div class='col-sm-6'>
-                        <h4>Citywide issues</h4>
+                        <h4>CITYWIDE ISSUES</h4>
                         <p>The Mayor proposes most city-wide policies. These include <a href='/search/?q=&selected_facets=topics_exact:City Business' target="_blank">business transactions</a>, changes to the <a href='/search/?q=&selected_facets=topics_exact:Municipal Code' target="_blank">municipal code</a>, <a href='/search/?q=&selected_facets=topics_exact:Bonds' target="_blank">bond issuance</a> and <a href='/search/?q=&selected_facets=topics_exact:Appointment' target="_blank">appointments</a>.</p>
 
                         <p>
@@ -107,12 +107,12 @@
                         <br/>
                     </div>
                     <div class='col-sm-6'>
-                        <h4>Local issues</h4>
-                        <p>At the local level, matters like <a href='/search/?q=&selected_facets=topics_exact:Land Use' target="_blank">land use</a>, <a href='/search/?q=&selected_facets=topics_exact:Sign permits' target="_blank">signs</a>, <a href='/search/?q=&selected_facets=topics_exact:Parking' target="_blank">street parking</a>, <a href='/search/?q=&selected_facets=topics_exact:Business Permits and Privileges' target="_blank">business permits</a>, and other <a href='/search/?q=&selected_facets=topics_exact:Residents' target="_blank">residents issues</a> require the local Alderman's support.</p>
+                        <h4>LOCAL ISSUES</h4>
+                        <p>At the local level, matters like <a href='/search/?q=&selected_facets=topics_exact:Land Use' target="_blank">land use</a>, <a href='/search/?q=&selected_facets=topics_exact:Sign permits' target="_blank">signs</a>, <a href='/search/?q=&selected_facets=topics_exact:Parking' target="_blank">street parking</a>, <a href='/search/?q=&selected_facets=topics_exact:Business Permits and Privileges' target="_blank">business permits</a>, and other <a href='/search/?q=&selected_facets=topics_exact:Residents' target="_blank">residents issues</a> require the local councilor's support.</p>
 
                         <p>
                             <a class='btn btn-primary' href='/council-members/'>
-                                Find your alderman <i class="fa fa-fw fa-chevron-right"></i>
+                                Find your Councilor <i class="fa fa-fw fa-chevron-right"></i>
                             </a>
                         </p>
                         <br/>
@@ -131,19 +131,20 @@
                     <h2>
                         <i class="fa fa-fw fa-calendar-o non-mobile-only"></i>
                         <i class="fa fa-calendar-o mobile-only"></i>
-                        Upcoming Meetings
+                        UPCOMING MEETINGS
                     </h2>
                     <br/>
 
                     {% if next_council_meeting %}
 
-                    <h4><i class="fa fa-fw fa-institution"></i> Next City Council meeting</h4>
+                    <h3><i class="fa fa-fw fa-institution"></i>NEXT CITY COUNCIL MEETING</h3>
 
-                    <p class="small text-muted">
+                    <p class="big">
                         <i class="fa fa-fw fa-calendar-o"></i> {{next_council_meeting.start_time | date:"D n/d/Y"}}<br/>
                         <i class="fa fa-fw fa-clock-o"></i> {{next_council_meeting.start_time| date:"g:ia"}}<br/>
-                        <i class="fa fa-fw fa-map-marker"></i> Council Chambers, City Hall<br />
-                        <i class="fa fa-fw"></i> 121 N LaSalle St, Chicago, IL
+                        <i class="fa fa-fw fa-map-marker"></i> 1 City Hall Square<br />
+                        <i class="fa fa-fw"></i>Room 550<br />
+                        <i class="fa fa-fw"></i>Boston, MA 02201
                     </p>
                     <a class='btn btn-info btn-sm' href="{{next_council_meeting.event_page_url}}">
                         Details
@@ -183,7 +184,7 @@
         <div class="row-fluid">
             <div class='col-sm-10 col-sm-offset-1'>
                 <h2>
-                    <i class="fa fa-fw fa-users"></i>Latest Council Meeting
+                    <i class="fa fa-fw fa-users"></i>LATEST COUNCIL MEETING
                 </h2>
 
                 <p class="big">
@@ -192,7 +193,7 @@
                 </p>
 
                 <p>
-                    One of the more unusual aspects of Chicago City Council is the volume of ordinances that are introduced and passed every month. Most of these are routine items like <a href='/search/?q=&selected_facets=topics_exact:Sign%20permits' target="_blank">sign permits</a>, <a href='/search/?q=&selected_facets=topics_exact:Damage to vehicle claim' target="_blank">damaged vehicle claims</a>, <a href='/search/?q=&selected_facets=topics_exact:Sidewalk cafe' target="_blank">sidewalk cafe approvals</a> and <a href='/search/?q=&selected_facets=topics_exact:Honorifics' target="_blank">honorifics</a>.
+                    One of the more unusual aspects of Boston City Council is the volume of ordinances that are introduced and passed every month. Most of these are routine items like <a href='/search/?q=&selected_facets=topics_exact:Sign%20permits' target="_blank">sign permits</a>, <a href='/search/?q=&selected_facets=topics_exact:Damage to vehicle claim' target="_blank">damaged vehicle claims</a>, <a href='/search/?q=&selected_facets=topics_exact:Sidewalk cafe' target="_blank">sidewalk cafe approvals</a> and <a href='/search/?q=&selected_facets=topics_exact:Honorifics' target="_blank">honorifics</a>.
                 </p>
 
                 <p>
@@ -205,7 +206,7 @@
         <div class="row-fluid">
             <div class='col-sm-6 col-sm-offset-1'>
                 <h4>
-                    Non-Routine Activity
+                    <!--Non-Routine Activity-->
                 </h4>
                 {% for legislation in meeting_activity.bills_nonroutine %}
                 <div class="bill-meeting">
@@ -221,7 +222,7 @@
 
             <div class='col-sm-4'>
                 <h4>
-                    Legislative topics
+                    <!--Legislative topics-->
                 </h4>
 
                 {% for parent in topic_hierarchy %}
@@ -376,8 +377,8 @@
       {
       "@context": "http://schema.org",
       "@type": "WebSite",
-      "name" : "Chicago Councilmatic",
-      "url": "https://chicago.councilmatic.org/",
+      "name" : "Boston Councilmatic",
+      "url": "https://boston.councilmatic.org/",
       "potentialAction": {
           "@type": "SearchAction",
           "target": "https://chicago.councilmatic.org/search/?q={search_term_string}",
